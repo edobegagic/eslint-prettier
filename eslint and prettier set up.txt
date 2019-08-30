@@ -1,0 +1,35 @@
+1. Install dependencies:
+
+npm i -D eslint eslint-config-prettier eslint-plugin-prettier prettier
+
+
+2. Create an .eslintrc file in your project root and write following code in .eslintrc:
+
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["plugin:prettier/recommended"],
+
+  "plugins": ["prettier"],
+
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+
+
+3. Create a .prettierrc file in your project root and write following code in .prettierrc:
+
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false
+}
+
+4. Enable formatOnSave in Vscode
