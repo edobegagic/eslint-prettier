@@ -1,0 +1,14 @@
+1. npx install-peerdeps --dev escint-config-airbnb
+
+2. npm install eslint-config-prettier
+
+3. in .eslintrc
+
+{
+  "extends": ["airbnb", "prettier"],
+
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-use-before-define": 0
+  }
+}
