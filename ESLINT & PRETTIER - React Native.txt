@@ -1,0 +1,46 @@
+1. npx install-peerdeps --dev eslint-config-airbnb
+
+(includes: eslint, eslint-plugin-import, eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-jsx-a11y)
+
+2. npm install eslint-config-prettier
+
+3. npm install --save-dev eslint-plugin-react-native
+
+------------------------------------------------------
+------------------------------------------------------
+
+
+==========
+.eslintrc
+==========
+
+{
+  "extends": ["airbnb", "prettier"],
+
+  "plugins": ["react", "react-native"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "env": {
+    "react-native/react-native": true
+  },
+
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-use-before-define": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "object-shorthand": "off",
+    "react/prefer-stateless-function": "off",
+    "react/self-closing-comp": "off",
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-raw-text": 2
+  }
+}
+
+
