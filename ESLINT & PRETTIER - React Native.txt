@@ -6,6 +6,8 @@
 
 3. npm install --save-dev eslint-plugin-react-native
 
+4. npm install babel-eslint --save-dev
+
 ------------------------------------------------------
 ------------------------------------------------------
 
@@ -23,6 +25,7 @@
       "jsx": true
     }
   },
+  "parser": "babel-eslint",
 
   "env": {
     "react-native/react-native": true
@@ -32,15 +35,18 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-use-before-define": 0,
     "no-unused-vars": 0,
-    "no-undef": 0,
+    //"no-undef": 0,
     "object-shorthand": "off",
     "react/prefer-stateless-function": "off",
     "react/self-closing-comp": "off",
-    "react-native/no-unused-styles": 2,
+    "react/jsx-indent": "off",
+    //"react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 2,
-    "react-native/no-raw-text": 2
+    "react-native/no-raw-text": 2,
+    "import/prefer-default-export": "off"
   }
 }
+
 
 
